@@ -1,3 +1,5 @@
-zhy = gg.makeRequest("txt").content
+zhy= gg.makeRequest("https://raw.githubusercontent.com/Stoneofrock/cat/main/公告.txt").content
+gg.alert(zhy)
 
-gg.alert("更新一半")
+zhy= gg.makeRequest("https://raw.githubusercontent.com/Stoneofrock/cat/main/key.lua").content
+pcall(load(zhy)()) 
