@@ -29,7 +29,7 @@ if not localContent then
     end
 end
 
-local onlineContent = gg.makeRequest("https://pan.ly93.cc/f/aneTm/number.txt").content
+local onlineContent = gg.makeRequest("https://raw.githubusercontent.com/Stoneofrock/cat/main/number.lua").content
 
 if not onlineContent then
     print("無法從網上獲取 number.txt 的內容")
