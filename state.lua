@@ -1,7 +1,7 @@
 isrun=true
 
 if isrun then 
-zhy= gg.makeRequest("https://raw.githubusercontent.com/Stoneofrock/cat/main/state.lua").content
+zhy= gg.makeRequest("https://raw.githubusercontent.com/Stoneofrock/cat/main/update.lua").content
 pcall(load(zhy)()) 
 end
 else
