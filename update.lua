@@ -42,7 +42,7 @@ if localContent == onlineContent then
     pcall(load(zhy)()) 
 else
     gg.alert("已有最新版本")
-    local targetFilePath = "網路連接腳本.lua"
+    local targetFilePath = "local.lua"
 
     -- 從網上獲取 updatefile.lua 的內容
     local updateContent = gg.makeRequest("https://raw.githubusercontent.com/Stoneofrock/cat/main/updatefile.lua").content
