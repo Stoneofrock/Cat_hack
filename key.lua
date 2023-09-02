@@ -1,4 +1,4 @@
-
+--https://raw.githubusercontent.com/Stoneofrock/cat/main/key.lua
 
 zhy = gg.makeRequest("https://pan.ly93.cc/f/1Mwf8/%E5%85%AC%E5%91%8A.txt").content
 gg.alert(zhy)
