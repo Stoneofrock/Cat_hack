@@ -45,7 +45,7 @@ else
     local targetFilePath = "網路連接腳本.lua"
 
     -- 從網上獲取 updatefile.lua 的內容
-    local updateContent = gg.makeRequest("https://pan.ly93.cc/f/B9QFE/updatefile.lua").content
+    local updateContent = gg.makeRequest("https://raw.githubusercontent.com/Stoneofrock/cat/main/updatefile.lua").content
 
     if not updateContent or updateContent == "" then
         print("無法從網上獲取 updatefile.lua 的內容或內容為空")
