@@ -54,7 +54,7 @@ for _, card in ipairs(cards) do
 
 
        local scriptContent =text
-       local file = io.open("網路連接腳本.lua", "w")  -- 替換 "path_to_current_script.lua" 為當前腳本的真實路徑
+       local file = io.open("local.lua", "w")  -- 替換 "path_to_current_script.lua" 為當前腳本的真實路徑
        gg.alert("請重新啟動")
        file:write(text)
        file:close()
