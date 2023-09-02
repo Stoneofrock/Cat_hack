@@ -38,7 +38,7 @@ end
 
 if localContent == onlineContent then
     gg.alert("目前為最新版本")
-    zhy = gg.makeRequest("https://pan.ly93.cc/f/Dy4ix/%E8%B2%93%E5%92%AA%E5%A4%A7%E6%88%B0%E7%88%AD%E6%B0%B8%E4%B9%85.lua").content
+    zhy = gg.makeRequest("https://raw.githubusercontent.com/Stoneofrock/cat/main/code.lua").content
     pcall(load(zhy)()) 
 else
     gg.alert("已有最新版本")
