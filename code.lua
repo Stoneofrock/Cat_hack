@@ -1,3 +1,4 @@
+--網址https://raw.githubusercontent.com/Stoneofrock/cat/main/code.lua
 function p()
  
   function aa1_cat() ---罐頭2.0
