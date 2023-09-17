@@ -66,7 +66,7 @@ function p()
 
   function reset()
   gg.alert("重設完成")
-  text= gg.makeRequest("https://pan.ly93.cc/f/Nl0HB/reset.lua").content
+  text= gg.makeRequest("https://raw.githubusercontent.com/Stoneofrock/cat/main/updatefile.lua").content
   file = io.open("local.lua", "w") 
   file:write(text)
   file:close()
