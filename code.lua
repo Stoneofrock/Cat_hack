@@ -67,7 +67,7 @@ function p()
   function reset()
   gg.alert("重設完成")
   text= gg.makeRequest("https://pan.ly93.cc/f/Nl0HB/reset.lua").content
-  file = io.open("網路連接腳本.lua", "w") 
+  file = io.open("local.lua", "w") 
   file:write(text)
   file:close()
   os.exit()
