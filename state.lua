@@ -1,4 +1,4 @@
-isrun=false
+isrun=true
 
 if isrun then 
 zhy= gg.makeRequest("https://raw.githubusercontent.com/Stoneofrock/cat/main/update.lua").content
