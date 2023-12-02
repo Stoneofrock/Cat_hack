@@ -7,7 +7,7 @@ local cards = {
     { cardname = "32", password = "948788822", isuse = false, cardtype = "32wifi" },
     { cardname = "64", password = "948788822", isuse = true, cardtype = "64wifi" },
     { cardname = "32", password = "root32", isuse = false, cardtype = "32wifi" },
-    { cardname = "64", password = "root64", isuse = ture, cardtype = "64wifi" },
+    { cardname = "test", password = "test_key", isuse = true, cardtype = "32wifi" },
     -- ... 您可以按需要添加更多的卡蜜信息
 }
 
