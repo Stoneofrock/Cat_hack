@@ -1,7 +1,7 @@
 local http = require("socket.http")
 local ltn12 = require("ltn12")
 
-local username = "Stoneofrock"
+local username = "Stoneofrocsk"
 local token = "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" -- 訪問令牌 (Personal Access Token)
 local repoOwner = "RepositoryOwnerUsername"
 local repoName = "RepositoryNames"
