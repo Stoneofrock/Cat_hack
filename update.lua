@@ -23,9 +23,9 @@ local localContent = readFile(filePath)
 -- 如果本地沒有number.txt文件，則創建一個並寫入預設內容 "1.0.0"
 if not localContent then
     if writeFile(filePath, "1.0.0") then
-        print("number.txt 已在本地創建並初始化為 '1.0.0'")
+        
     else
-        print("創建 number.txt 失敗")
+        
     end
 end
 
@@ -54,9 +54,9 @@ else
 
     -- 將獲取到的 updatefile.lua 內容寫入本地文件
     if writeFile(targetFilePath, updateContent) then
-        print("已成功將內容寫入 " .. targetFilePath)
+       
     else
-        print("寫入 " .. targetFilePath .. " 失敗")
+      
         return -- 結束執行
     end
 
