@@ -46,7 +46,7 @@ function p()
   function allmap() --解鎖地圖
     gg.clearResults() 
     gg.setRanges(262207)
-    gg.searchNumber('28,800;2,023:13',4)   
+    gg.searchNumber('28,800;2,024:13',4)   
     local y=gg.getResults(1) 
     gg.addListItems(  {{ address=y[1]. address+0x534,flags=4,freeze=true,value=0  }} )
     gg.addListItems(  {{ address=y[1]. address+0x538,flags=4,freeze=true,value=0  }} )
