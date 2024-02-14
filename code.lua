@@ -1,10 +1,12 @@
---網址https://raw.githubusercontent.com/Stoneofrock/cat/main/code.lua
 function p()
- 
+ local current_year = os.date("*t").year
+
   function aa1_cat() ---罐頭2.0
     gg.clearResults() 
     gg.setRanges(262207)
-    gg.searchNumber('28,800;2,024:13',4)   
+    local search_string = '28,800;' .. tostring(current_year) .. ':13'   
+    gg.searchNumber(search_string,4)
+    
     local y=gg.getResults(1) 
     local k=gg.prompt(   { '要修改的罐頭數量' } ,{ '填数字'}  )
     gg.addListItems(  {{ address=y[1]. address+-0xCC,flags=4,freeze=true,value=k[1]  }} )
@@ -16,7 +18,9 @@ function p()
   function aa1_XP() ---xp2.0改版
     gg.clearResults() 
     gg.setRanges(262207)
-    gg.searchNumber('28,800;2,024:13',4)   
+   local search_string = '28,800;' .. tostring(current_year) .. ':13'   
+    gg.searchNumber(search_string,4)
+    
     local y=gg.getResults(1) 
     local k=gg.prompt(   { '要修改的xp數量' } ,{ '填数字'}  )
     gg.addListItems(  {{ address=y[1]. address+0x30,flags=4,freeze=true,value=k[1]  }} )
@@ -46,7 +50,9 @@ function p()
   function allmap() --解鎖地圖
     gg.clearResults() 
     gg.setRanges(262207)
-    gg.searchNumber('28,800;2,024:13',4)   
+    local search_string = '28,800;' .. tostring(current_year) .. ':13'   
+    gg.searchNumber(search_string,4)
+    
     local y=gg.getResults(1) 
     gg.addListItems(  {{ address=y[1]. address+0x534,flags=4,freeze=true,value=0  }} )
     gg.addListItems(  {{ address=y[1]. address+0x538,flags=4,freeze=true,value=0  }} )
@@ -112,7 +118,8 @@ gg.alert(zhy)
    function hp() --無敵
   gg.clearResults() 
   gg.setRanges(262207)
-  gg.searchNumber('4,400;1,000;1,800:49',4)   
+   local search_string = '4,400;1,000;' .. tostring(current_year) .. ':49'
+  gg.searchNumber(search_string,4)   
   local y=gg.getResults(1) 
   gg.addListItems(  {{ address=y[1]. address+0x10,flags=4,freeze=true,value=9999999 }} )
   gg.clearResults() 
