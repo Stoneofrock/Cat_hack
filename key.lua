@@ -17,7 +17,7 @@ local isuses = {
 }
 
 
-local k = gg.prompt({ '🦊帐号', '📑密码', '主人您的名字:' }, {}, { 'text', 'text', 'text' })
+local k = gg.prompt({ '🦊帐号', '📑密码', '您的名字:' }, {}, { 'text', 'text', 'text' })
 
 if k == nil then
     gg.alert("你关闭了登陆界面")
