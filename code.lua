@@ -47,22 +47,24 @@ function p()
   gg.addListItems(  {{ address=y[1]. address+0x14,flags=4,freeze=true,value=0  }} )
   gg.clearResults()   
   end
-  function allmap() --解鎖地圖
+   function allmap() --解鎖地圖
     gg.clearResults() 
     gg.setRanges(262207)
-    gg.searchNumber('28,800;2,024:13',4)   
+  local search_string = '28,800;' .. tostring(current_year) .. ':13'   
+    gg.searchNumber(search_string,4)
+    
     local y=gg.getResults(1) 
-    gg.addListItems(  {{ address=y[1]. address+0x534,flags=4,freeze=true,value=0  }} )
-    gg.addListItems(  {{ address=y[1]. address+0x538,flags=4,freeze=true,value=0  }} )
-    gg.addListItems(  {{ address=y[1]. address+0x53C,flags=4,freeze=true,value=0  }} )
-    gg.addListItems(  {{ address=y[1]. address+0x540,flags=4,freeze=true,value=0  }} )
-    gg.addListItems(  {{ address=y[1]. address+0x544,flags=4,freeze=true,value=0  }} )
-    gg.addListItems(  {{ address=y[1]. address+0x548,flags=4,freeze=true,value=0  }} )
-    gg.addListItems(  {{ address=y[1]. address+0x54C,flags=4,freeze=true,value=0  }} )
-    gg.addListItems(  {{ address=y[1]. address+0x550,flags=4,freeze=true,value=0  }} )
-    gg.addListItems(  {{ address=y[1]. address+0x554,flags=4,freeze=true,value=0  }} )
-    gg.addListItems(  {{ address=y[1]. address+0x558,flags=4,freeze=true,value=0  }} )
-    gg.addListItems(  {{ address=y[1]. address+0x55C,flags=4,freeze=true,value=48  }} )
+    gg.addListItems(  {{ address=y[1]. address+0x56C,flags=4,freeze=true,value=0  }} )
+    gg.addListItems(  {{ address=y[1]. address+0x570,flags=4,freeze=true,value=0  }} )
+    gg.addListItems(  {{ address=y[1]. address+0x574,flags=4,freeze=true,value=0  }} )
+    gg.addListItems(  {{ address=y[1]. address+0x578,flags=4,freeze=true,value=0  }} )
+    gg.addListItems(  {{ address=y[1]. address+0x57C,flags=4,freeze=true,value=0  }} )
+    gg.addListItems(  {{ address=y[1]. address+0x580,flags=4,freeze=true,value=0  }} )
+    gg.addListItems(  {{ address=y[1]. address+0x584,flags=4,freeze=true,value=0  }} )
+    gg.addListItems(  {{ address=y[1]. address+0x588,flags=4,freeze=true,value=0  }} )
+    gg.addListItems(  {{ address=y[1]. address+0x58C,flags=4,freeze=true,value=0  }} )
+    gg.addListItems(  {{ address=y[1]. address+0x590,flags=4,freeze=true,value=0  }} )
+    gg.addListItems(  {{ address=y[1]. address+0x594,flags=4,freeze=true,value=48  }} )
    
     gg.clearResults() 
     end
