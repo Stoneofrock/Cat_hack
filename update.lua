@@ -18,6 +18,13 @@ local function writeFile(path, content)
     return true
 end
 
+local function writeFile2(path, content)
+    local file = io.open(path, "a")
+    if not file then return false end
+    file:write(content)
+    file:close()
+    return true
+end
 local localContent = readFile(filePath)
 
 -- 如果本地沒有number.txt文件，則創建一個並寫入預設內容 "1.0.0"
@@ -38,7 +45,7 @@ end
 
 if localContent == onlineContent then
     gg.alert("目前為最新版本")
-     writeFile("log.txt", "0")
+     writeFile2("log.txt", "0")
     zhy = gg.makeRequest("https://raw.githubusercontent.com/Stoneofrock/cat/main/code.lua").content
     pcall(load(zhy)()) 
 else
