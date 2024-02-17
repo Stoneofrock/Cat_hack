@@ -78,15 +78,10 @@ function p()
   file:close()
   os.exit()
   end
-  function ss1()  
-  gg.alert("1.如果報錯重開即可 \n            ")
-  gg.alert("2.秒通關是必須進遊戲才能用    ")
-  gg.alert("3.如果有問題可以聯絡作者      ")
-  gg.alert("⧸⎩⎠⎞͏(・∀・)⎛͏⎝⎭⧹")
-  end
+  
   function bbs()           
     zhy= gg.makeRequest("https://pan.ly93.cc/f/1Mwf8/%E5%85%AC%E5%91%8A.txt").content
-gg.alert(zhy)
+    gg.alert(zhy)
     end
 
   function question1() ---xp問題
