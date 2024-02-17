@@ -21,7 +21,7 @@ end
 local function writeFile2(path, content)
     local file = io.open(path, "a")
     if not file then return false end
-    file:write(content \n)
+    file:write(content "\n" )
     file:close()
     return true
 end
