@@ -15,7 +15,7 @@ local function writeFile(path, content)
     if not file then return false end
     file:write(content)
     file:close()
-    return true
+ 
 end
 
 local function writeFile2(path, content)
@@ -23,7 +23,7 @@ local function writeFile2(path, content)
     if not file then return false end
     file:write(content "\n" )
     file:close()
-    return true
+   
 end
 local localContent = readFile(filePath)
 
