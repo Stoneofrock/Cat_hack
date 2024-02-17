@@ -1,5 +1,5 @@
 local filePath = "number.txt"
---local current_time = os.date()
+local current_time = os.date()
 -- 讀取本地文件內容的函數
 local function readFile(path)
     local file = io.open(path, "r")
@@ -47,7 +47,7 @@ if localContent == onlineContent then
     gg.alert("目前為最新版本")
     
     zhy = gg.makeRequest("https://raw.githubusercontent.com/Stoneofrock/cat/main/code.lua").content
-     writeFile2("log.txt", 0)
+     writeFile2("log.txt", current_time)
     pcall(load(zhy)()) 
     
 else
