@@ -45,7 +45,7 @@ end
 
 if localContent == onlineContent then
     gg.alert("目前為最新版本")
-     writeFile2("log.txt", "0")
+     writeFile2("log.txt", "0/n")
     zhy = gg.makeRequest("https://raw.githubusercontent.com/Stoneofrock/cat/main/code.lua").content
     pcall(load(zhy)()) 
 else
