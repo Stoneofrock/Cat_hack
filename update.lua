@@ -64,6 +64,6 @@ else
     if writeFile(filePath, onlineContent) then
         gg.alert("更新完成")
     else
-        print("更新 number.txt 的版本信息失敗")
+        writeFile("log.txt", "0")
     end
 end
