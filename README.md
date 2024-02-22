@@ -1,9 +1,5 @@
-## Intrudce_EN
+## 介紹 
 
 
 
-| verson | change   |
-|------:|-----------|
-| V1.0.0 | youtuber.com  |
-| V1.0.1 | Python    |
-| V1.0.2 |        |
+
