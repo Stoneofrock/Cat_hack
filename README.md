@@ -1,9 +1,9 @@
-## About me
+## Intrudce_EN
 
 
 
 | verson | change   |
 |------:|-----------|
-| V1.0.0 | fix some  |
+| V1.0.0 | youtuber.com  |
 | V1.0.1 | Python    |
 | V1.0.2 |        |
