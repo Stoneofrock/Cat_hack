@@ -1,4 +1,4 @@
 ## 介紹 
-!(https://myoctocat.com/assets/images/base-octocat.svg)
+ 這些腳本是用來修改貓咪大戰爭的。
 
 
